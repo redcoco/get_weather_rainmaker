@@ -1,0 +1,35 @@
+menu "URL Configuration"
+
+    config HTTP_URL_ADDRESS
+        string "HTTP URL address"
+        default "http://api.map.baidu.com/weather/v1/?district_id=310115&data_type=all&ak=q4xNcBxfqRfftaoF5tIDXKOzWWwGKCCp"
+        help
+            Baidu API URL for the HTTP GET request. Configure district_id and ak
+    
+    config BOARD_GPIO_BOOT
+        int "GPIO connected to BOOT button"
+        default 9 if IDF_TARGET_ESP32C3
+        default 9 if IDF_TARGET_ESP32C6
+        default 0 if IDF_TARGET_ESP32S3
+        default 0 if IDF_TARGET_ESP32
+        default 9
+        help
+            Set the GPIO for boot button
+
+endmenu
+
+menu "LED Srip Configuration"
+
+    config LED_GPIO_INPUT
+        int "LED INPUT GPIO PIN"
+        default 10
+        help
+            Set the input pin for LED strip
+
+    config LED_COUNT
+        int "Count of LED"
+        default 16
+        help
+            Set the total number of LED
+
+endmenu
