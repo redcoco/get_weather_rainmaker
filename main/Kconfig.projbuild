@@ -2,7 +2,7 @@ menu "URL Configuration"
 
     config HTTP_URL_ADDRESS
         string "HTTP URL address"
-        default "http://api.map.baidu.com/weather/v1/?district_id=310115&data_type=all&ak=q4xNcBxfqRfftaoF5tIDXKOzWWwGKCCp"
+        default "http://api.map.baidu.com/weather/v1/?district_id=xxxx&data_type=all&ak=xxxxx"
         help
             Baidu API URL for the HTTP GET request. Configure district_id and ak
     
