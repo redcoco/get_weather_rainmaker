@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+#include <sys/param.h>
 #include "esp_tls.h"
 #include "esp_http_client.h"
 #include "esp_log.h"
